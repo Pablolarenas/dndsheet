@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -17,12 +18,12 @@ public class AddElements : MonoBehaviour
         {
             if (item.text == string.Empty) continue;
 
-            totalValue += int.Parse(item.text);
+            totalValue += int.Parse(Regex.Match(item.text, @"\d+").Value);
         }
 
         if(toggleToListen != null && toggleToListen.isOn)
         {
-            totalValue += int.Parse(FindObjectOfType<UiManager>().ProfValue.text);
+            totalValue += FindObjectOfType<UiManager>().ProfValue;
         }
 
         result.text = totalValue.ToString();

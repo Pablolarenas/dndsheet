@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 [Serializable]
 public class UiElement
@@ -31,10 +32,9 @@ public class UiManager : MonoBehaviour
             currentUiState = value;
         }
     }
-
     [Header("-----------------------------")]
-    public InputField ProfValue;
-
+    [SerializeField] private InputField ProfValueInputField;
+    [HideInInspector] public int ProfValue;
 
     private void CheckUiState(UiState from, UiState to)
     {
@@ -45,5 +45,10 @@ public class UiManager : MonoBehaviour
     public void SetNewUiState(UiState newUiState)
     {
         CurrentUiState = newUiState;
+    }
+
+    public void AdjustProfValue()
+    {
+        ProfValue = int.Parse(Regex.Match(ProfValueInputField.text, @"\d+").Value);
     }
 }
