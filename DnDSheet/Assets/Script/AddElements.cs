@@ -18,7 +18,14 @@ public class AddElements : MonoBehaviour
         {
             if (item.text == string.Empty) continue;
 
-            totalValue += int.Parse(Regex.Match(item.text, @"\d+").Value);
+            if(item.text[0] == '-')
+            {
+                totalValue -= int.Parse(Regex.Match(item.text, @"\d+").Value);
+            }
+            else
+            {
+                totalValue += int.Parse(Regex.Match(item.text, @"\d+").Value);
+            }
         }
 
         if(toggleToListen != null && toggleToListen.isOn)

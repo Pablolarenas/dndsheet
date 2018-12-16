@@ -49,6 +49,13 @@ public class UiManager : MonoBehaviour
 
     public void AdjustProfValue()
     {
-        ProfValue = int.Parse(Regex.Match(ProfValueInputField.text, @"\d+").Value);
+        if (ProfValueInputField.text[0] == '-')
+        {
+            ProfValue = -int.Parse(Regex.Match(ProfValueInputField.text, @"\d+").Value);
+        }
+        else
+        {
+            ProfValue = int.Parse(Regex.Match(ProfValueInputField.text, @"\d+").Value);
+        }
     }
 }
