@@ -12,6 +12,7 @@ public class UiElement
     public string Name;
     public UiState UiState;
     public GameObject UiObject;
+    public Image ButtonImage;
 }
 
 public enum UiState { Character, Stats, Combat, Inventory, Spells, Notes }
@@ -35,11 +36,18 @@ public class UiManager : MonoBehaviour
     [Header("-----------------------------")]
     [SerializeField] private InputField ProfValueInputField;
     [HideInInspector] public int ProfValue;
+    public List<AddElements> ListOfElementsAffectedByProBonus;
+    [Header("-----------------------------")]
+    public Color HighlightedColor;
+    public Color NormalColor;
 
     private void CheckUiState(UiState from, UiState to)
     {
         ListOfUiElement.Where(type => type.UiState == from).SingleOrDefault().UiObject.SetActive(false);
+        ListOfUiElement.Where(type => type.UiState == from).SingleOrDefault().ButtonImage.color = NormalColor;
+
         ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().UiObject.SetActive(true);
+        ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().ButtonImage.color = HighlightedColor;
     }
 
     public void SetNewUiState(UiState newUiState)
@@ -56,6 +64,15 @@ public class UiManager : MonoBehaviour
         else
         {
             ProfValue = int.Parse(Regex.Match(ProfValueInputField.text, @"\d+").Value);
+        }
+        AdjustElements();
+    }
+
+    public void AdjustElements()
+    {
+        foreach (AddElements item in ListOfElementsAffectedByProBonus)
+        {
+            item.UpdateValue();
         }
     }
 }

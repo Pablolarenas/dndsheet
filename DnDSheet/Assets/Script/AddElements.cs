@@ -10,6 +10,12 @@ public class AddElements : MonoBehaviour
     [SerializeField] private InputField result;
     [Header("-----------------------------")]
     [SerializeField] private Toggle toggleToListen;
+    private UiManager uiManager;
+
+    private void Awake()
+    {
+        uiManager = FindObjectOfType<UiManager>();
+    }
 
     public void UpdateValue()
     {
@@ -30,9 +36,16 @@ public class AddElements : MonoBehaviour
 
         if(toggleToListen != null && toggleToListen.isOn)
         {
-            totalValue += FindObjectOfType<UiManager>().ProfValue;
+            totalValue += uiManager.ProfValue;
         }
 
-        result.text = totalValue.ToString();
+        string value = totalValue.ToString();
+
+        if (totalValue > 0)
+        {
+            value = string.Concat("+", value);
+        }
+
+        result.text = value;
     }
 }
