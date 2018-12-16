@@ -13067,6 +13067,7 @@ GameObject:
   - component: {fileID: 306003967}
   - component: {fileID: 306003966}
   - component: {fileID: 306003965}
+  - component: {fileID: 306003968}
   m_Layer: 0
   m_Name: Total_Save
   m_TagString: Untagged
@@ -13127,7 +13128,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 306003966}
   m_TextComponent: {fileID: 919864694}
   m_Placeholder: {fileID: 0}
@@ -13190,6 +13191,22 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 306003963}
   m_CullTransparentMesh: 0
+--- !u!114 &306003968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 306003963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae7281027920f54ba97aa3c98fc0afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfElementsToAdd:
+  - {fileID: 1666572722}
+  - {fileID: 639457631}
+  result: {fileID: 306003965}
+  toggleToListen: {fileID: 2115506665}
 --- !u!1 &308927487
 GameObject:
   m_ObjectHideFlags: 0
@@ -25827,6 +25844,7 @@ GameObject:
   - component: {fileID: 639457633}
   - component: {fileID: 639457632}
   - component: {fileID: 639457631}
+  - component: {fileID: 639457634}
   m_Layer: 0
   m_Name: Total_Atribute
   m_TagString: Untagged
@@ -25887,7 +25905,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 639457632}
   m_TextComponent: {fileID: 908056783}
   m_Placeholder: {fileID: 0}
@@ -25906,7 +25924,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 306003968}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -25950,6 +25979,23 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 639457629}
   m_CullTransparentMesh: 0
+--- !u!114 &639457634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 639457629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae7281027920f54ba97aa3c98fc0afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfElementsToAdd:
+  - {fileID: 1917879034}
+  - {fileID: 1548533976}
+  - {fileID: 828180716}
+  result: {fileID: 639457631}
+  toggleToListen: {fileID: 0}
 --- !u!1 &641919096
 GameObject:
   m_ObjectHideFlags: 0
@@ -29722,14 +29768,14 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 715171422}
   m_TextComponent: {fileID: 1372368977}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_CharacterValidation: 1
+  m_CharacterLimit: 2
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -29737,7 +29783,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1037405607}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -34905,7 +34962,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 639457634}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -42764,6 +42832,7 @@ GameObject:
   - component: {fileID: 1037405606}
   - component: {fileID: 1037405605}
   - component: {fileID: 1037405604}
+  - component: {fileID: 1037405607}
   m_Layer: 0
   m_Name: Total_Speed
   m_TagString: Untagged
@@ -42824,7 +42893,7 @@ MonoBehaviour:
     m_HighlightedTrigger: Highlighted
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 1037405605}
   m_TextComponent: {fileID: 1732405549}
   m_Placeholder: {fileID: 0}
@@ -42887,6 +42956,22 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1037405602}
   m_CullTransparentMesh: 0
+--- !u!114 &1037405607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1037405602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ae7281027920f54ba97aa3c98fc0afe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfElementsToAdd:
+  - {fileID: 715171421}
+  - {fileID: 1088785774}
+  result: {fileID: 1037405604}
+  toggleToListen: {fileID: 0}
 --- !u!1 &1040756047
 GameObject:
   m_ObjectHideFlags: 0
@@ -44451,14 +44536,14 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1088785775}
   m_TextComponent: {fileID: 882549223}
   m_Placeholder: {fileID: 0}
-  m_ContentType: 0
+  m_ContentType: 2
   m_InputType: 0
   m_AsteriskChar: 42
-  m_KeyboardType: 0
+  m_KeyboardType: 4
   m_LineType: 0
   m_HideMobileInput: 0
-  m_CharacterValidation: 0
-  m_CharacterLimit: 0
+  m_CharacterValidation: 1
+  m_CharacterLimit: 2
   m_OnEndEdit:
     m_PersistentCalls:
       m_Calls: []
@@ -44466,7 +44551,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1037405607}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -61542,7 +61638,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1515316602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -62837,7 +62933,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 639457634}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -66593,7 +66700,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 306003968}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -73972,7 +74090,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1901982095
 RectTransform:
   m_ObjectHideFlags: 0
@@ -74524,7 +74642,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 639457634}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.InputField+OnChangeEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
@@ -80386,6 +80515,7 @@ MonoBehaviour:
   - Name: Notes
     UiState: 5
     UiObject: {fileID: 218128742}
+  ProfValue: {fileID: 426722961}
 --- !u!4 &2058540800
 Transform:
   m_ObjectHideFlags: 0
@@ -82844,7 +82974,18 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 306003968}
+        m_MethodName: UpdateValue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
   m_IsOn: 0

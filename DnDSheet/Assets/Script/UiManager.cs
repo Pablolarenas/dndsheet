@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using System;
 using System.Linq;
 
@@ -30,6 +31,10 @@ public class UiManager : MonoBehaviour
             currentUiState = value;
         }
     }
+
+    [Header("-----------------------------")]
+    public InputField ProfValue;
+
 
     private void CheckUiState(UiState from, UiState to)
     {
