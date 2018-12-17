@@ -3560,6 +3560,7 @@ MonoBehaviour:
   - {fileID: 2097054892}
   result: {fileID: 117221176}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &118452034
 GameObject:
   m_ObjectHideFlags: 0
@@ -4070,6 +4071,7 @@ MonoBehaviour:
   - {fileID: 1138828947}
   result: {fileID: 129038233}
   toggleToListen: {fileID: 2066253253}
+  typeOfCalculation: 0
 --- !u!1 &129842829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4368,6 +4370,7 @@ MonoBehaviour:
   - {fileID: 249591234}
   result: {fileID: 137601679}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &138683087
 GameObject:
   m_ObjectHideFlags: 0
@@ -4733,6 +4736,7 @@ MonoBehaviour:
   - {fileID: 80523856}
   result: {fileID: 144397431}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &145464855
 GameObject:
   m_ObjectHideFlags: 0
@@ -8569,6 +8573,7 @@ MonoBehaviour:
   - {fileID: 2097054892}
   result: {fileID: 250754906}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &254651992
 GameObject:
   m_ObjectHideFlags: 0
@@ -11251,6 +11256,7 @@ MonoBehaviour:
   - {fileID: 639457631}
   result: {fileID: 306003965}
   toggleToListen: {fileID: 2115506665}
+  typeOfCalculation: 0
 --- !u!1 &308927487
 GameObject:
   m_ObjectHideFlags: 0
@@ -17758,6 +17764,7 @@ MonoBehaviour:
   - {fileID: 137601679}
   result: {fileID: 490838998}
   toggleToListen: {fileID: 1174903016}
+  typeOfCalculation: 0
 --- !u!1 &490913879
 GameObject:
   m_ObjectHideFlags: 0
@@ -22074,6 +22081,7 @@ MonoBehaviour:
   - {fileID: 1548533976}
   result: {fileID: 639457631}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &641919096
 GameObject:
   m_ObjectHideFlags: 0
@@ -24595,6 +24603,7 @@ MonoBehaviour:
   - {fileID: 490913881}
   result: {fileID: 697679330}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &700446164
 GameObject:
   m_ObjectHideFlags: 0
@@ -27864,6 +27873,7 @@ MonoBehaviour:
   - {fileID: 697679330}
   result: {fileID: 778592302}
   toggleToListen: {fileID: 1741320141}
+  typeOfCalculation: 0
 --- !u!1 &779440789
 GameObject:
   m_ObjectHideFlags: 0
@@ -36319,6 +36329,7 @@ MonoBehaviour:
   - {fileID: 1088785774}
   result: {fileID: 1037405604}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &1040756047
 GameObject:
   m_ObjectHideFlags: 0
@@ -36539,7 +36550,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1042293670
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38813,6 +38824,7 @@ MonoBehaviour:
   - {fileID: 1078931803}
   result: {fileID: 1115266725}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &1116917976
 GameObject:
   m_ObjectHideFlags: 0
@@ -39680,6 +39692,7 @@ MonoBehaviour:
   - {fileID: 254651994}
   result: {fileID: 1138828947}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &1139449637
 GameObject:
   m_ObjectHideFlags: 0
@@ -43523,6 +43536,7 @@ MonoBehaviour:
   - {fileID: 72775644}
   result: {fileID: 1250992081}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &1251304612
 GameObject:
   m_ObjectHideFlags: 0
@@ -50500,6 +50514,7 @@ MonoBehaviour:
   - {fileID: 1697206359}
   result: {fileID: 1428604814}
   toggleToListen: {fileID: 370897976}
+  typeOfCalculation: 0
 --- !u!1 &1429788725
 GameObject:
   m_ObjectHideFlags: 0
@@ -53227,7 +53242,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1515316602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -55060,6 +55075,7 @@ MonoBehaviour:
   - {fileID: 1115266725}
   result: {fileID: 1559500985}
   toggleToListen: {fileID: 1935397921}
+  typeOfCalculation: 0
 --- !u!1 &1562535648
 GameObject:
   m_ObjectHideFlags: 0
@@ -58753,6 +58769,7 @@ MonoBehaviour:
   - {fileID: 1272654202}
   result: {fileID: 1697206359}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &1698838198
 GameObject:
   m_ObjectHideFlags: 0
@@ -68568,6 +68585,7 @@ MonoBehaviour:
   - {fileID: 1507786073}
   result: {fileID: 2064786429}
   toggleToListen: {fileID: 0}
+  typeOfCalculation: 0
 --- !u!1 &2065712499
 GameObject:
   m_ObjectHideFlags: 0
