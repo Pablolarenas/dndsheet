@@ -3595,6 +3595,7 @@ MonoBehaviour:
   result: {fileID: 93401947}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &93401947
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5280,6 +5281,7 @@ MonoBehaviour:
   result: {fileID: 129038233}
   toggleToListen: {fileID: 2066253253}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &129842829
 GameObject:
   m_ObjectHideFlags: 0
@@ -5579,6 +5581,7 @@ MonoBehaviour:
   result: {fileID: 137601679}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &137791221
 GameObject:
   m_ObjectHideFlags: 0
@@ -6126,6 +6129,7 @@ MonoBehaviour:
   result: {fileID: 144397431}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &145464855
 GameObject:
   m_ObjectHideFlags: 0
@@ -10476,6 +10480,7 @@ MonoBehaviour:
   result: {fileID: 250754906}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &251218428
 GameObject:
   m_ObjectHideFlags: 0
@@ -13132,6 +13137,7 @@ GameObject:
   - component: {fileID: 300116656}
   - component: {fileID: 300116655}
   - component: {fileID: 300116654}
+  - component: {fileID: 300116657}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -13223,6 +13229,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &300116657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 300116652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782e5e0ddb54b42428b6e2712c9e7e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &300209390
 GameObject:
   m_ObjectHideFlags: 0
@@ -13622,6 +13639,7 @@ MonoBehaviour:
   result: {fileID: 306003965}
   toggleToListen: {fileID: 2115506665}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &307372291
 GameObject:
   m_ObjectHideFlags: 0
@@ -21825,6 +21843,7 @@ MonoBehaviour:
   result: {fileID: 490838998}
   toggleToListen: {fileID: 1174903016}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &490913879
 GameObject:
   m_ObjectHideFlags: 0
@@ -22239,6 +22258,7 @@ MonoBehaviour:
   result: {fileID: 497399010}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &497399010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27191,6 +27211,7 @@ MonoBehaviour:
   result: {fileID: 639457631}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &641919096
 GameObject:
   m_ObjectHideFlags: 0
@@ -30173,6 +30194,7 @@ MonoBehaviour:
   result: {fileID: 697679330}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &699934417
 GameObject:
   m_ObjectHideFlags: 0
@@ -33331,6 +33353,7 @@ MonoBehaviour:
   result: {fileID: 761107384}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &761107384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34392,6 +34415,7 @@ MonoBehaviour:
   result: {fileID: 778592302}
   toggleToListen: {fileID: 1741320141}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &779440789
 GameObject:
   m_ObjectHideFlags: 0
@@ -45064,6 +45088,7 @@ MonoBehaviour:
   result: {fileID: 1037405604}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1040756047
 GameObject:
   m_ObjectHideFlags: 0
@@ -45278,6 +45303,7 @@ GameObject:
   - component: {fileID: 1042293673}
   - component: {fileID: 1042293672}
   - component: {fileID: 1042293671}
+  - component: {fileID: 1042293674}
   m_Layer: 0
   m_Name: Capabilities
   m_TagString: Untagged
@@ -45369,6 +45395,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1042293674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1042293669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782e5e0ddb54b42428b6e2712c9e7e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1044010380
 GameObject:
   m_ObjectHideFlags: 0
@@ -48153,6 +48190,7 @@ MonoBehaviour:
   result: {fileID: 1115266725}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1116917976
 GameObject:
   m_ObjectHideFlags: 0
@@ -49171,6 +49209,7 @@ MonoBehaviour:
   result: {fileID: 1138828947}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1139449637
 GameObject:
   m_ObjectHideFlags: 0
@@ -51048,6 +51087,7 @@ MonoBehaviour:
   result: {fileID: 1178208618}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &1178208618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -51810,6 +51850,7 @@ MonoBehaviour:
   result: {fileID: 1189929819}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!1 &1193918905
 GameObject:
   m_ObjectHideFlags: 0
@@ -54021,6 +54062,7 @@ MonoBehaviour:
   result: {fileID: 1250992081}
   toggleToListen: {fileID: 1655719695}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1251304612
 GameObject:
   m_ObjectHideFlags: 0
@@ -62658,6 +62700,7 @@ MonoBehaviour:
   result: {fileID: 1428604814}
   toggleToListen: {fileID: 370897976}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1428980113
 GameObject:
   m_ObjectHideFlags: 0
@@ -65918,13 +65961,14 @@ GameObject:
   - component: {fileID: 1515316605}
   - component: {fileID: 1515316604}
   - component: {fileID: 1515316603}
+  - component: {fileID: 1515316606}
   m_Layer: 0
   m_Name: Character Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1515316602
 RectTransform:
   m_ObjectHideFlags: 0
@@ -66009,6 +66053,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1515316606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1515316601}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782e5e0ddb54b42428b6e2712c9e7e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1515442761
 GameObject:
   m_ObjectHideFlags: 0
@@ -68340,6 +68395,7 @@ MonoBehaviour:
   result: {fileID: 1559500985}
   toggleToListen: {fileID: 1935397921}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1562535648
 GameObject:
   m_ObjectHideFlags: 0
@@ -68510,6 +68566,7 @@ MonoBehaviour:
   result: {fileID: 1565023693}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &1565023693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -73089,6 +73146,7 @@ MonoBehaviour:
   result: {fileID: 1697206359}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &1698838198
 GameObject:
   m_ObjectHideFlags: 0
@@ -73653,6 +73711,7 @@ MonoBehaviour:
   result: {fileID: 1711735228}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &1711735228
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75116,6 +75175,7 @@ GameObject:
   - component: {fileID: 1755077980}
   - component: {fileID: 1755077979}
   - component: {fileID: 1755077978}
+  - component: {fileID: 1755077981}
   m_Layer: 0
   m_Name: Combat
   m_TagString: Untagged
@@ -75207,6 +75267,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1755077981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1755077976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782e5e0ddb54b42428b6e2712c9e7e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1762690960
 GameObject:
   m_ObjectHideFlags: 0
@@ -77698,6 +77769,7 @@ GameObject:
   - component: {fileID: 1837970595}
   - component: {fileID: 1837970594}
   - component: {fileID: 1837970593}
+  - component: {fileID: 1837970596}
   m_Layer: 0
   m_Name: Notes
   m_TagString: Untagged
@@ -77789,6 +77861,17 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1837970596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837970591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 782e5e0ddb54b42428b6e2712c9e7e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1845438377
 GameObject:
   m_ObjectHideFlags: 0
@@ -79142,6 +79225,7 @@ MonoBehaviour:
   result: {fileID: 1883711456}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 1
+  startingValue: 0
 --- !u!114 &1883711456
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85934,6 +86018,7 @@ MonoBehaviour:
   - {fileID: 1428604817}
   HighlightedColor: {r: 0.96862745, g: 0.6784314, b: 0.078431375, a: 1}
   NormalColor: {r: 0.32156864, g: 0.32156864, b: 0.32156864, a: 1}
+  Sensitivity: 50
 --- !u!4 &2058540800
 Transform:
   m_ObjectHideFlags: 0
@@ -86099,6 +86184,7 @@ MonoBehaviour:
   result: {fileID: 2064786429}
   toggleToListen: {fileID: 0}
   typeOfCalculation: 0
+  startingValue: 0
 --- !u!1 &2065712499
 GameObject:
   m_ObjectHideFlags: 0

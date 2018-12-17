@@ -20,6 +20,7 @@ public enum UiState { Character, Stats, Combat, Inventory, Spells, Notes }
 public class UiManager : MonoBehaviour
 {
     public List<UiElement> ListOfUiElement;
+    private int lenghtOfEnum;
     private UiState currentUiState = UiState.Character; //INITIAL STATE
     public UiState CurrentUiState
     {
@@ -40,12 +41,26 @@ public class UiManager : MonoBehaviour
     [Header("-----------------------------")]
     public Color HighlightedColor;
     public Color NormalColor;
+    [Header("-----------------------------")]
+    public int Sensitivity = 50;
+
+    private void Awake()
+    {
+        lenghtOfEnum = Enum.GetNames(typeof(UiState)).Length;
+        CheckUiState(currentUiState);
+    }
 
     private void CheckUiState(UiState from, UiState to)
     {
         ListOfUiElement.Where(type => type.UiState == from).SingleOrDefault().UiObject.SetActive(false);
         ListOfUiElement.Where(type => type.UiState == from).SingleOrDefault().ButtonImage.color = NormalColor;
 
+        ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().UiObject.SetActive(true);
+        ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().ButtonImage.color = HighlightedColor;
+    }
+
+    private void CheckUiState(UiState to)
+    {
         ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().UiObject.SetActive(true);
         ListOfUiElement.Where(type => type.UiState == to).SingleOrDefault().ButtonImage.color = HighlightedColor;
     }
@@ -74,5 +89,19 @@ public class UiManager : MonoBehaviour
         {
             item.UpdateValue();
         }
+    }
+
+    public void SwipeRight()
+    {
+        CurrentUiState = (UiState)(((int)CurrentUiState + 1) % lenghtOfEnum);
+        Debug.Log("right current: " + CurrentUiState);
+    }
+
+    public void SwipeLeft()
+    {
+        int current = (int)CurrentUiState - 1;
+        if (current < 0) current = lenghtOfEnum - 1;
+        CurrentUiState = (UiState)(current % lenghtOfEnum);
+        Debug.Log("left current: " + CurrentUiState);
     }
 }

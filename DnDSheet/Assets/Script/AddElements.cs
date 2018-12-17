@@ -14,6 +14,8 @@ public class AddElements : MonoBehaviour
     private UiManager uiManager;
     public enum TypeOfCalculation { Suma, Multiplicacion };
     public TypeOfCalculation typeOfCalculation = TypeOfCalculation.Suma;
+    [Header("-----------------------------")]
+    [SerializeField] private int startingValue = 0;
     private delegate void CalculationMethod();
     private CalculationMethod calculationMethod;
 
@@ -28,6 +30,7 @@ public class AddElements : MonoBehaviour
                 break;
             case TypeOfCalculation.Multiplicacion:
                 calculationMethod = Multiplicacion;
+                if (startingValue == 0) startingValue = 1;
                 break;
             default:
                 break;
@@ -36,7 +39,7 @@ public class AddElements : MonoBehaviour
 
     private void Suma()
     {
-        int totalValue = 0;
+        int totalValue = startingValue;
         foreach (InputField item in ListOfElementsToAdd)
         {
             if (item.text == string.Empty) continue;
@@ -68,7 +71,7 @@ public class AddElements : MonoBehaviour
 
     private void Multiplicacion()
     {
-        int totalValue = 0;
+        int totalValue = startingValue;
         foreach (InputField item in ListOfElementsToAdd)
         {
             if (item.text == string.Empty) continue;
