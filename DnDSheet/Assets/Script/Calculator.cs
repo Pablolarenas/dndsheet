@@ -10,6 +10,9 @@ public class Calculator : MonoBehaviour
     private TypeOfCalculation typeOfCalculation;
     [SerializeField] private InputField calculatorInput;
     [SerializeField] private Image lifeBar;
+    [SerializeField] private InputField lifeInput;
+    [SerializeField] private GameObject parentObject;
+    [SerializeField] private Text currentLifeText;
     private Player player;
     private string equation;
     ExpressionParser parser;
@@ -19,9 +22,15 @@ public class Calculator : MonoBehaviour
         player = FindObjectOfType<PlayerController>().player;
     }
 
+    public void SetMaxLife()
+    {
+        player.SetMaxLife(int.Parse(lifeInput.text));
+        currentLifeText.text = string.Concat("HP ", player.Life.ToString(), "/", player.MaximumLife.ToString());
+    }
+
     public void Toggle()
     {
-        gameObject.SetActive(!gameObject.activeSelf);
+        parentObject.SetActive(!parentObject.activeSelf);
         calculatorInput.text = string.Empty;
     }
 
@@ -54,7 +63,8 @@ public class Calculator : MonoBehaviour
                 break;
         }
 
-        Debug.Log(exp.Value + " / " + player.Life);
+        currentLifeText.text = string.Concat("HP ", player.Life.ToString(), "/", player.MaximumLife.ToString());
+        calculatorInput.text = string.Empty;
     }
 
     public void WriteChar(Text text)

@@ -11,7 +11,6 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         uiManager = FindObjectOfType<UiManager>();
-        player.Life = player.MaximumLife;
     }
 }
 
@@ -32,6 +31,12 @@ public class Player
         {
             return life;
         }
+    }
+
+    public void SetMaxLife(float valor)
+    {
+        Debug.Log(valor);
+        MaximumLife = Life = valor;
     }
     private float life;
     [SerializeField] private UiManager uiManager;
