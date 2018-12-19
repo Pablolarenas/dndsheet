@@ -34,18 +34,25 @@ public class UiManager : MonoBehaviour
             currentUiState = value;
         }
     }
-    [Header("-----------------------------")]
+    [Header("PROF VALUE--------------------------")]
     [SerializeField] private InputField ProfValueInputField;
     [HideInInspector] public int ProfValue;
     public List<AddElements> ListOfElementsAffectedByProBonus;
-    [Header("-----------------------------")]
+    [Header("UI COLOR FLOW----------------------")]
     public Color HighlightedColor;
     public Color NormalColor;
-    [Header("-----------------------------")]
+    [Header("SWIPE-----------------------------")]
     public int Sensitivity = 50;
+    [Header("PLAYER----------------------------")]
+    [SerializeField] private Player player;
+    [Header("LIFE------------------------------")]
+    [SerializeField] private Image lifeBarCalculator;
+    [SerializeField] private Image lifeBar;
+    [SerializeField] private Calculator calculator;
 
     private void Awake()
     {
+        player = FindObjectOfType<PlayerController>().player;
         lenghtOfEnum = Enum.GetNames(typeof(UiState)).Length;
         CheckUiState(currentUiState);
     }
@@ -103,5 +110,16 @@ public class UiManager : MonoBehaviour
         if (current < 0) current = lenghtOfEnum - 1;
         CurrentUiState = (UiState)(current % lenghtOfEnum);
         Debug.Log("left current: " + CurrentUiState);
+    }
+
+    public void SetLifePorcentage(float value)
+    {
+        value /= player.MaximumLife;
+        lifeBar.fillAmount = lifeBarCalculator.fillAmount = value;
+    }
+
+    public void ToggleCalculator()
+    {
+        calculator.Toggle();
     }
 }
