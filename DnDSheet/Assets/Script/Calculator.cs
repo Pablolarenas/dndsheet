@@ -49,15 +49,15 @@ public class Calculator : MonoBehaviour
         switch (typeOfCalculation)
         {
             case TypeOfCalculation.Heal:
-                player.Life += (float)exp.Value;
-                if (player.Life > player.MaximumLife) player.Life = player.MaximumLife; else if (player.Life < 0) player.Life = 0;
+                player.Life = player.Life + Mathf.Abs((float)exp.Value);
+                if (player.Life < -player.MaximumLife) player.Life = -player.MaximumLife; else if (player.Life > player.MaximumLife) player.Life = player.MaximumLife;
                 break;
             case TypeOfCalculation.Damage:
-                player.Life -= (float)exp.Value;
-                if (player.Life < 0) player.Life = 0; else if (player.Life > player.MaximumLife) player.Life = player.MaximumLife;
+                player.Life = player.Life - Mathf.Abs((float)exp.Value);
+                if (player.Life < -player.MaximumLife) player.Life = -player.MaximumLife; else if (player.Life > player.MaximumLife) player.Life = player.MaximumLife;
                 break;
             case TypeOfCalculation.TempHp:
-                player.Life += (float)exp.Value;
+                player.Life = player.Life >= 0 ? player.Life + Mathf.Abs((float)exp.Value) : player.Life - Mathf.Abs((float)exp.Value);
                 break;
             default:
                 break;
