@@ -36,7 +36,8 @@ public class Collapsible : MonoBehaviour
         {
             foreach (GameObject item in extraElements)
             {
-                item.SetActive(isExpanded);
+                if(item != null)
+                    item.SetActive(isExpanded);
             }
         }
         collapsibleContent.SetActive(isExpanded);
@@ -52,5 +53,4 @@ public class Collapsible : MonoBehaviour
         extraElements.Add(instance.gameObject);
         Collapse(true);
     }
-
 }
